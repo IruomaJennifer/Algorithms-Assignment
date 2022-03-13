@@ -1,0 +1,10 @@
+ALGORITHM TO ADD TWO INTEGER NUMBERS
+Start
+Input an integer number A
+If non-integer number or character is entered by user, ask the user to repeat input
+Input an integer number B
+If non-integer number or character is entered by user, ask the user to repeat input
+Define an integer variable sum to take the sum of A and B
+Let sum be equal to the addition of A and B
+Print sum
+Stop 

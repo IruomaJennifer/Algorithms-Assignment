@@ -1,0 +1,62 @@
+CONSTRAINTS/ASSUMPTIONS
+It doesn't include numbers with fractions
+convert to base ten first and sebsequently to the desired base
+Includes cases of wanting to convert straight to base ten and straight from base ten
+
+ALGORITHM TO CONVERT FROM ONE NUMBER BASE TO ANOTHER	
+Start
+Declare and enter positive integer variables inputNumber, inputBase and outputBase
+Check to ensure they are integer variables, if not end the program and ask user to input correct values
+Declare an array inputList to hold the conversion of inputNumber to an array
+Declare an array remainder to hold remainders from integer division
+Check if outputBase is 10, if it is
+
+Declare an integer variable toBase10 to hold the base ten value to be calculated and initialize it as zero
+Declare another integer variable position as a counter and buffer and initialize as zero.
+Start Loop
+	While position is less than the length of inputList
+	toBase10 is equal to the summation of itself and the product of multiplication between an element of the array inputList at index position n; and the inputBase raised to the power of the length of inputList subtracting n plus one
+Stop Loop
+Print toBase10
+
+Check if inputBase is 10, if it is
+Declare a buffer variable remainderValue which is an integer
+Start Loop
+	While inputNumber is greater than zero
+	Let remainderValue be equal to the integer division of inputNumber by outputBase
+	Store remaindervalue in the array remainder
+	Let inputNumber be equal to the normal division of inputNumber by outputBase
+Stop Loop
+Get the length of the remainder array
+Declare a variable printIter which is initialized the length of the remainder array minus one
+Start Loop
+	While printIter is greater than or equal to zero
+	Print the value of the element at the index position of printIter
+	Subtract one from printIter
+Stop Loop
+
+If the two conditions above don’t hold then,
+
+Declare an integer variable toBase10 to hold the base ten value to be calculated and initialize it as zero
+Declare another integer variable position as a counter and buffer and initialize as zero.
+Start Loop
+	While position is less than the length of inputList
+	toBase10 is equal to the summation of itself and the product of multiplication between an element of the array inputList at index position n; and the inputBase raised to the power of the length of inputList subtracting n plus one
+Stop Loop
+
+Declare a buffer variable remainderValue which is an integer
+Start Loop
+	While toBase10 is greater than zero
+	Let remainderValue be equal to the integer division of toBase10 by outputBase
+	Store remaindervalue in the array remainder
+	Let toBase10 be equal to the normal division of toBase10 by outputBase
+Stop Loop
+
+Get the length of the remainder array
+Declare a variable printIter which is initialized the length of the remainder array minus one
+Start Loop
+	While printIter is greater than or equal to zero
+	Print the value of the element at the index position of printIter
+	Subtract one from printIter
+Stop Loop
+Stop

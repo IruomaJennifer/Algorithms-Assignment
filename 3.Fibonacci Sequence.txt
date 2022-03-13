@@ -1,0 +1,22 @@
+Constraints/Assumptions
+It’s a sequence so it’s a list of numbers
+Termination criteria is the number of terms input by a user
+The sequence will begin with zero and one
+The user must input a positive integer
+
+ALGORITHM TO GET THE FIBONACCI SEQUENCE
+Start
+User to input a positive integer number userInput as the number of terms expected in the sequence
+Check to ensure that the input is a positive integer, if it’s not exit program and ask user for correct input
+Declare an integer list variable fibonacci to hold the list of Fibonacci numbers
+Add the values one and zero to the list
+Declare an integer variable sequence to calculate each term
+Declare an integer variable term and initialize it to one
+Start Loop
+	While term is less than or equal to userInput
+	Let sequence be equal to the sum of elements in fibonacci with their index values as term and term minus one
+	Add sequence to the list fibonacci
+	print sequence
+	Add one to term
+Stop Loop
+Stop 

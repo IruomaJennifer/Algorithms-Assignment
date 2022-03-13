@@ -1,0 +1,20 @@
+Constraints/Assumptions
+The product of all the positive integers less than or equal to a given number
+We can’t find the factorial of a negative number
+We can’t find the factorial of a non-integer number e.g. 5.84
+Zero factorial and one factorial are both equal to one
+
+ALGORITHM TO GET THE FIBONACCI SEQUENCE
+Start
+Enter a positive integer number factorial
+Declare another positive integer buffer to help calculate factorial
+Let buffer be equal to factorial minus one
+Check that the user entered an integer and prompt them to try again if not
+Check if factorial is equal to zero, if it is factorial would be equal to one
+If not Start Loop
+	While buffer is greater than or equal to one
+	Let factorial be equal to factorial multiplied by buffer
+	Subtract one from buffer
+Stop Loop
+Print Factorial
+Stop 

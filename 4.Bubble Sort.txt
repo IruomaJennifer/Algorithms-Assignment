@@ -1,0 +1,24 @@
+Constraints/Assumptions
+Works with a list of numbers
+Compares index n and n plus 1
+Sorts in ascending order
+Uses a Boolean to remember if indices were swapped
+
+ALGORITHM TO PERFORM BUBBLE SORT
+Enter a set of numbers into a list of floating point numbers
+Check to ensure numbers were entered and if not exit program and ask user to enter correct values
+Check the length of the list and assign it to an integer variable index which will also be declared
+Declare a Boolean variable swapped; initialize its value to be true
+Start outer Loop
+	While swapped is true
+	Let swapped be equal to false
+	Start Inner Loop
+		Declare a variable n and assign it a value of zero
+		A For loop from n equals zero till n equals to index minus one
+		Check if the element at index n in the list is greater than the element at index n plus one, if it is, swap the two elements
+		Let swapped be equal to true
+		Add one to n
+		Stop inner loop
+Stop Outer Loop
+Print the values in the List
+Stop 
