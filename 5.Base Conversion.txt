@@ -2,12 +2,16 @@ CONSTRAINTS/ASSUMPTIONS
 It doesn't include numbers with fractions
 convert to base ten first and sebsequently to the desired base
 Includes cases of wanting to convert straight to base ten and straight from base ten
+Same base conversion is not possible
+Each digit in a given number should be lower than the base of the number 
 
 ALGORITHM TO CONVERT FROM ONE NUMBER BASE TO ANOTHER	
 Start
 Declare and enter positive integer variables inputNumber, inputBase and outputBase
 Check to ensure they are integer variables, if not end the program and ask user to input correct values
+Ensure that inputBase is not equal to outputBase, or else take the user back to the beginning  
 Declare an array inputList to hold the conversion of inputNumber to an array
+Check that each digit in array is less than inputBase or else take the user back to the beginning
 Declare an array remainder to hold remainders from integer division
 Check if outputBase is 10, if it is
 
